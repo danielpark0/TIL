@@ -57,3 +57,32 @@
 
   `connect hr/hr`
 
+- oracle SQL Developer
+
+  새로 만들기/ 새 데이터베이스 접속
+
+  `접속이름 : oracle`
+
+  `사용자이름 : system`
+
+  `비밀번호 : oracle`
+
+  `호스트 이름 : localhost`
+
+  `포트 : 1521`
+
+  `SID : xe`
+
+  테스트 -> 성공
+
+  접속
+
+- Docker oracle 종료
+  `docker stop oracle`
+
+- Docker 재시작
+
+  `docker start oracle`
+
+- 컨테이너 삭제
+  `docker rm oracle`
