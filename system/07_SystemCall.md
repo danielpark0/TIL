@@ -51,4 +51,3 @@
 - ANSI에서 ANSI C 표준 정립
 
 > 리눅스는 POSIX와 ANSI C 지원
-
