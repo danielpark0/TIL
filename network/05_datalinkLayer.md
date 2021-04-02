@@ -50,3 +50,30 @@
     2. ARP Cache Table에 있으면 패킷 전송, 없으면 ARP Request 전송 - Broadcasting
     3. IP 에서 목적지 MAC 주소를 ARP Reply로 전달
     4. 목적지 MAC 주소는 ARP Cache Table에 저장되고 패킷 전송
+
+- Looping
+  - 같은 네트워크 대역대에서 스위치에 연결된 경로가 2개 이상인 경우에 발생
+
+- STP : 스패닝 트리 프로토콜
+  - 자동으로 루핑을 막아주는 알고리즘
+    1. Bridge ID : 스위치의 우선순위로 0 ~ 65535로 설정, 낮을 수록 우선순위 농픔
+    2. Path Cost : 링크의 속도, 1000/링크 속도로 계산되며 작을수록 우선순위가 높다.
+  - 상태변화 : 스위치 포트는 스패닝 트리 프로ㅗ콜 안에서 5가지 상태로 표현
+    1. Disabled
+    2. Blocking
+    3. Listening
+    4. Learning
+    5. Forwarding
+
+- VLAN
+
+  - 물리적 구성이 아닌 논리적인 가상의 LAN을 구성하는 기술
+  - 불필요한 데이터 차단 : 브로드캐스트 도메인 별로 나누어 관리
+  - 관리의 용이성과 보안 : 호스트의 물리적 이동 없이 LAN 그룹 변경이 가능
+  - 비용 절감 : 새로운 LAN 추가시 물리적 스위치 구매 필요 없음
+  - 종류
+    1. Port 기반 VLAN
+    2. MAC 주소 기반 VLAN
+    3. IP 주소 기반 VLAN
+
+  - Trunk : 물리적 스위치간 VLAN 연결 시 하나의 물리적 연결로 VLAN 그룹들 공유
