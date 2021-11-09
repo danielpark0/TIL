@@ -58,3 +58,17 @@ query.setParameter(1, usernameParam);
 - JPA는 페이징을 다음 두 API로 추상화
 - setFirstResult : 조회 시작 위치
 - setMaxResults : 조회할 데이터 수
+
+
+### 조인
+- 내부 조인
+select m from member m [inner] join m.team t
+- 외부 조인
+select m from member m left [outer] join m.team t
+- 세타 조인
+select count(m) from member m, team t where m.username = t.name
+- ON 절(JPA 2.1부터 지원)
+	- 조인 대상 필터링
+		- 예) 회원과 팀을 조인하면서, 팀 이름이 A인 팀만 조인
+	- 연관관계가 없는 엔티티 외부 조인
+		- 예) 회원의 이름과 팀의 이름이 같은 대상 외부 조인
