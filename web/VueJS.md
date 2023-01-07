@@ -90,5 +90,12 @@ var appHeader = {
 ## 뷰라우터
 - 뷰 라이브러리를 이용하여 싱글 페이지 애플리케이션을 구현할 때 사용하는 라이브러리
 ```
-<router-view></router-viewddd>
+npm install vue-router
 ```
+```
+<router-view></router-view>
+```
+```
+<router-link to="이동할 URL"></router-link>
+```
+- mode에 history를 넣어주면 해시 없이 쓸 수 있음.
