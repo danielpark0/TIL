@@ -99,3 +99,16 @@ npm install vue-router
 <router-link to="이동할 URL"></router-link>
 ```
 - mode에 history를 넣어주면 해시 없이 쓸 수 있음.
+
+## Axios
+- Promise 기반의 HTTP 통신 라이브러리
+
+자바스크립트의 비동기 처리 패턴
+1. callback
+2. promise
+3. promise + generator
+4. async & await
+
+## data binding
+v-if vs v-show
+- if는 DOM에서 사라지고, show는 display none으로 상태만 바꿈
