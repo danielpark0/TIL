@@ -112,3 +112,17 @@ npm install vue-router
 ## data binding
 v-if vs v-show
 - if는 DOM에서 사라지고, show는 display none으로 상태만 바꿈
+
+```
+v-on:click="메서드 이름"
+v-on:keyup.enter="메서드 이름"
+```
+
+## watch
+- 데이터의 변화에 따라 특정 로직 실행할 수 있음
+
+## watch vs computed
+- computed : 빠르게 계산 데이터에 의존,
+단순한 값에 대한 계산, validation 대부분 computed
+- watch : 데이터가 바뀌었을때 로직, 무거운 로직들
+- 웬만하면 computed를 사용하는게 좋다.
