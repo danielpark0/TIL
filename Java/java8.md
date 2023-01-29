@@ -51,3 +51,22 @@ runSomething1.doIt();
 ## 스태틱 메소드
 - 해당 타입 관련 헬터 또는 유틸리티 메소드를 제공할 때 인터페이스에 스태틱 메소드를 제공할 수 있다.
 
+## Stream
+- 데이터를 처리하는 흐름
+- 스트림이 처리하는 데이터 소스를 변경하지 않는다.
+- 무제한일 수 있다. (Short Circuit 메소드 사용해서 제한할 수 있다.)
+- **중개 오퍼레이션**은 lazy, stream을 return
+- **종료 오퍼레이션**은 stream을 return
+- 중개형 오퍼레이터 뒤에는 종료형 오퍼레이터 있어야함.
+
+## Optional
+- Optional 사용해서 null이거나 들어있는것을 리턴할 수 있음
+- 리턴값으로 쓰기를 권장
+```java
+return Optional.ofNullable(...);
+```
+- 파라메터, 필드, 맵의 키 등에 사용하지 말 것
+- 프리미티브 타입은 OptioanlInt이런것 사용
+- Collection, Map, Stream, Array, Optional 등은 Optional로 감싸지 말 것.
+이미 비어있는지 알 수 있음.
+- get 보다는 다양한 API 사용
