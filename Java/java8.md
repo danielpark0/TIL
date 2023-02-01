@@ -70,3 +70,10 @@ return Optional.ofNullable(...);
 - Collection, Map, Stream, Array, Optional 등은 Optional로 감싸지 말 것.
 이미 비어있는지 알 수 있음.
 - get 보다는 다양한 API 사용
+
+## Date And Time
+- java.util.Date는 Thread safe 하지 않음
+- type safe 하지 않음(ex. month)
+- 기계용 시간과 인류용 시간 있음
+- Instant는 기계용, localdate / localtime / localdatetime 인류용
+- Period 사람용, duration 기계용
