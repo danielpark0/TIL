@@ -81,3 +81,11 @@ return Optional.ofNullable(...);
 ## CompletableFuture
 ### 자바 Concurrent 프로그래밍
 -   동시에 여러 작업을 할 수 있는 소프트웨어
+### Executors
+- 고수준 concurrency 프로그래밍
+- 쓰레드를 만들고 관리하는 작업을 애플리케이션에서 분리
+```java
+//graceful shutdown
+executorService.shutdown();
+```
+- Runnable 대신 Callable 하면 return 가능
