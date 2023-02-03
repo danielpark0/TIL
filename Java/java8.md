@@ -77,3 +77,7 @@ return Optional.ofNullable(...);
 - 기계용 시간과 인류용 시간 있음
 - Instant는 기계용, localdate / localtime / localdatetime 인류용
 - Period 사람용, duration 기계용
+
+## CompletableFuture
+### 자바 Concurrent 프로그래밍
+-   동시에 여러 작업을 할 수 있는 소프트웨어
