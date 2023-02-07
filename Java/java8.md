@@ -89,3 +89,15 @@ return Optional.ofNullable(...);
 executorService.shutdown();
 ```
 - Runnable 대신 Callable 하면 return 가능
+
+### Future
+- 비동기적인 작업의 현재상태를 조회하거나 결과를 가져올 수 있음
+```java
+Future.get(); // 결과 가져옴
+Future.isDone(); //작 업상태 확인
+Future.cancel(); // 작업 취소
+// param으로 true하면 진행중 쓰레드 interrupt, false는 끝날때 기다림
+```
+```java
+invokeAll() // 리스트에 넣으면 기다렸다가 한번에 가져올 수 있음.
+```
