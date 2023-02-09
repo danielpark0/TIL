@@ -101,3 +101,9 @@ Future.cancel(); // 작업 취소
 ```java
 invokeAll() // 리스트에 넣으면 기다렸다가 한번에 가져올 수 있음.
 ```
+
+### CompletableFuture
+- 그냥 future을 사용하면 get()을 하지 않으면 콜백을 사용할 수 없는 문제가 있음.
+- 비동기 작업
+ - 리턴값 없으면 runAsync()
+ - 리턴값 있으면 supplyAsync()
