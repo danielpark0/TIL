@@ -117,3 +117,16 @@ invokeAll() // 리스트에 넣으면 기다렸다가 한번에 가져올 수 �
 
 ## Parallel Sort
 - 배열을 병렬로 정렬하는 기능 제공
+
+## Metaspace
+- JVM 여러 메모리 영역 중에 PermGen 메모리 영역이 없어지고 Metaspace 영역이 생겼다.
+### PermGen
+- permanent generation, 클래스 메타데이터를 담는 곳
+- Heap 영역에 속함
+- 기본값으로 제한된 크기를 가지고 있음
+### Metaspace
+- 클래스 메타데이터 담는 곳
+- Heap 영역이 아니라, Native 메모리 영역
+- 기본값으로 제한된 크기를 가지고 있지 않음(필요한 만큼 늘어남)
+- 자바8부터 PermGen 관련 java 옵션을 무시
+- Metaspace의 최대 사이즈를 꼭 설정해야함
