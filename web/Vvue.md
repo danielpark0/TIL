@@ -8,3 +8,10 @@
 ```js
 <a v-for="작명 in 3" :key="작명"></>
 ```
+
+# event handler
+```js
+@click=""
+```
+- vue에서는 @click으로 클릭시 이벤트 발생하게 할 수 있음
+- 함수안에서 데이터 쓸 때는 this.데이터명
