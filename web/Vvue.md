@@ -30,3 +30,13 @@
 v-if = "조건식"
 ```
 - 조건식 참일 때 보여줌
+
+# import / export
+```js
+export default 변수명
+import 변수명 from '파일경로'
+export {a,b}
+import {a} from '...' //변수명 그대로
+```
+- HTML 태그안의 속성 데이터 바인딩은 :어쩌구
+- HTML 태그안의 내용 데이터 바인딩은 {{어쩌구}}
