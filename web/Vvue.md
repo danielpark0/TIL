@@ -30,6 +30,11 @@
 v-if = "조건식"
 ```
 - 조건식 참일 때 보여줌
+```js
+v-else
+```
+- 조건식 참이 아닐 때 보여줌
+- else if 도 가능
 
 # import / export
 ```js
