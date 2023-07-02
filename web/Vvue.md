@@ -73,3 +73,8 @@ import {a} from '...' //변수명 그대로
 # v-model
 - 사용자 input 받을 때 사용할 수 있음
 ```v-model="데이터 이름"```
+
+# watcher
+- data 감시할 때 쓰면 됨.
+- ex) input에 문자 입력하면 경고 띄우고 싶다.
+```watch: {감시할데이터(){}}```
