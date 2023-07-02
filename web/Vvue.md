@@ -63,3 +63,13 @@ import {a} from '...' //변수명 그대로
 2. 등록하고
 3. 쓰기
 - props 받아온건 read-only
+
+# emit
+- 부모에게 메지를 보낼 떈 custom event
+``` $emit('작명', 데이터)```
+- 자식이 보낸 데이터는
+``` $event``` 변수에 담겨있음
+
+# v-model
+- 사용자 input 받을 때 사용할 수 있음
+```v-model="데이터 이름"```
