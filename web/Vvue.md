@@ -78,3 +78,19 @@ import {a} from '...' //변수명 그대로
 - data 감시할 때 쓰면 됨.
 - ex) input에 문자 입력하면 경고 띄우고 싶다.
 ```watch: {감시할데이터(){}}```
+
+# animation
+- transition
+
+```<transition name="작명"></transition>```
+
+```
+.작명-enter-from{시작스타일}
+.작명-enter-active{transition}
+.작명-enter-to{끝날때스타일}
+```
+```
+.작명-leave-from{시작스타일}
+.작명-leave-active{transition}
+.작명-leave-to{끝날때스타일}
+```
