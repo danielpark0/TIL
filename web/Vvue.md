@@ -94,3 +94,8 @@ import {a} from '...' //변수명 그대로
 .작명-leave-active{transition}
 .작명-leave-to{끝날때스타일}
 ```
+
+# sort, data 보존
+- array/object 데이터의 각각 별개의 사본을 만들려면
+
+``` [...array자료] ```
