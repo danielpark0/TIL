@@ -99,3 +99,10 @@ import {a} from '...' //변수명 그대로
 - array/object 데이터의 각각 별개의 사본을 만들려면
 
 ``` [...array자료] ```
+- 등호로 array를 집어넣으면 왼쪽 오른쪽 값 공유해주세요 임
+
+# lifecycle
+- 컴포넌트는 웹페이지에 표시되기까지 일련의 과정을 거침
+- create -> mount -> 컴포넌트 생성 -> update(컴포넌트 재랜더링) -> unmount
+- lifecycle hook을 걸어서 중간에 원하는 코드 실행가능
+- 서버에서 데이터 가져올때도 lifecycle hook 안에 코드 짬
