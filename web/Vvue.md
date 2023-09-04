@@ -106,3 +106,19 @@ import {a} from '...' //변수명 그대로
 - create -> mount -> 컴포넌트 생성 -> update(컴포넌트 재랜더링) -> unmount
 - lifecycle hook을 걸어서 중간에 원하는 코드 실행가능
 - 서버에서 데이터 가져올때도 lifecycle hook 안에 코드 짬
+
+# HashMode
+```
+import { createRouter, createWebHashHistory } from 'vue-router'
+
+const router = [];
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
+})
+```
+- 이렇게 하면 Hash Mode
+- URL에 #이 붙은채로 시작하고, # 뒤에 있는 내용은 서버에 전달되지 않음.
+
+# Navigation guards
+- 특정 URL로 접속할 때 뭔가 코드를 실행하고 싶은 경우 사용
