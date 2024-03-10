@@ -55,3 +55,7 @@
 - 프로파일러
 - 최적화
 - 로깅
+### 스프링이 컴포넌트 스캔하는 방법
+- 컴포넌트 스캔으로 빈으로 등록할 후보 클래스 정보를 찾는데 사용
+- ClassPathScanningCandidateComponentProvicder -> SimpleMetadataReader
+- ClassReader와 Visitor 사용해서 클래스에 있는 메타 정보 읽어옴
